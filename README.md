@@ -29,10 +29,14 @@ repo to get themes and font updates, etc.
 Go to the Alacritty website and follow installation instructions.
 This should automatically now lauch with you Starship configuration.
 
-## Linux 
+Copy the alacritty.yml in this repo to `%APPDATA%\alacritty\alacritty.yml`.
+
+## Linux
 
 ### Alacritty
 
 Go to the Alacritty website and follow installation instructions.
 This should automatically now lauch with you Starship configuration.
+
+Copy the alacritty.yml in this repo to `$HOME/.config/alacritty/alacritty.yml`.
 
