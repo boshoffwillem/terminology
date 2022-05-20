@@ -180,12 +180,12 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Night Owl)
-colors:
+# Colors (gruvbox)
+#colors:
   # Default colors
-  primary:
-    background: "#282828"
-    foreground: "#ebdbb2"
+  #primary:
+    #background: "#282828"
+    #foreground: "#ebdbb2"
 
     # Bright and dim foreground colors
     #
@@ -202,9 +202,9 @@ colors:
   #
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  cursor:
-    text: "#32302f"
-    cursor: "#fe8019"
+  #cursor:
+    #text: "#32302f"
+    #cursor: "#fe8019"
 
   # Vi mode cursor colors
   #
@@ -212,44 +212,43 @@ colors:
   #
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  vi_mode_cursor:
-    text: "#32302f"
-    cursor: "#fe8019"
+  #vi_mode_cursor:
+    #text: "#32302f"
+    #cursor: "#fe8019"
 
   # Search colors
   #
   # Colors used for the search bar and match highlighting.
-  search:
+  #search:
     # Allowed values are CellForeground/CellBackground, which reference the
     # affected cell, or hexadecimal colors like #ff00ff.
-    matches:
-      background: "#282828"
-      foreground: "#ebdbb2"
-    focused_match:
-      background: "#282828"
-      foreground: "#ebdbb2"
-
-    bar:
-      background: "#282828"
-      foreground: "#ebdbb2"
+    #matches:
+      #background: "#282828"
+      #foreground: "#ebdbb2"
+    #focused_match:
+      #background: "#282828"
+      #foreground: "#ebdbb2"
+    #bar:
+      #background: "#282828"
+      #foreground: "#ebdbb2"
 
   # Keyboard regex hints
-  hints:
+  #hints:
     # First character in the hint label
     #
     # Allowed values are CellForeground/CellBackground, which reference the
     # affected cell, or hexadecimal colors like #ff00ff.
-    start:
-      background: "#282828"
-      foreground: "#ebdbb2"
+    #start:
+      #background: "#282828"
+      #foreground: "#ebdbb2"
 
     # All characters after the first one in the hint label
     #
     # Allowed values are CellForeground/CellBackground, which reference the
     # affected cell, or hexadecimal colors like #ff00ff.
-    end:
-      background: "#282828"
-      foreground: "#ebdbb2"
+    #end:
+      #background: "#282828"
+      #foreground: "#ebdbb2"
 
   # Line indicator
   #
@@ -257,9 +256,9 @@ colors:
   # search and vi mode.
   #
   # By default, these will use the opposing primary color.
-  line_indicator:
-    foreground: None
-    background: "#a89984"
+  #line_indicator:
+    #foreground: None
+    #background: "#a89984"
 
   # Selection colors
   #
@@ -267,31 +266,31 @@ colors:
   #
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  selection:
-    text: "#ebdbb2"
-    background: "#a89984"
+  #selection:
+    #text: "#ebdbb2"
+    #background: "#a89984"
 
   # Normal colors
-  normal:
-    black: "#a89984"
-    red: "#cc241d"
-    green: "#98971a"
-    yellow: "#d79921"
-    blue: "#458588"
-    purple: "#b16286"
-    aqua: "#689d6a"
-    white: "#ebdbb2"
+  #normal:
+    #black: "#a89984"
+    #red: "#cc241d"
+    #green: "#98971a"
+    #yellow: "#d79921"
+    #blue: "#458588"
+    #purple: "#b16286"
+    #aqua: "#689d6a"
+    #white: "#ebdbb2"
 
   # Bright colors
-  bright:
-    black: "#928374"
-    red: "#fb4934"
-    green: "#b8bb26"
-    yellow: "#fabd2f"
-    blue: "#83a598"
-    purple: "#d3869b"
-    aqua: "#8ec07c"
-    white: "#ebdbb2"
+  #bright:
+    #black: "#928374"
+    #red: "#fb4934"
+    #green: "#b8bb26"
+    #yellow: "#fabd2f"
+    #blue: "#83a598"
+    #purple: "#d3869b"
+    #aqua: "#8ec07c"
+    #white: "#ebdbb2"
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
@@ -320,6 +319,69 @@ colors:
   # the default background. When set to `true` all cells will be transparent
   # regardless of their background color.
   #transparent_background_colors: false
+
+schemes:
+  codelight: &light
+    primary:
+      background: '#ffffff'
+      foreground: '#1e1e1e'
+
+    cursor:
+      text: '#d4d4d4'
+      cursor: '#d4d4d4'
+
+    normal:
+      black:   '#1e1e1e'
+      red:     '#c72e0f'
+      green:   '#009000'
+      yellow:  '#795e25'
+      blue:    '#007acc'
+      magenta: '#af00db'
+      cyan:    '#56b6c2'
+      white:   '#d4d4d4'
+
+    bright:
+      black:   '#1e1e1e'
+      red:     '#c72e0f'
+      green:   '#009000'
+      yellow:  '#795e25'
+      blue:    '#007acc'
+      magenta: '#af00db'
+      cyan:    '#56b6c2'
+      white:   '#d4d4d4'
+
+  codedark: &dark
+
+    primary:
+      background: '#1e1e1e'
+      foreground: '#d4d4d4'
+
+    cursor:
+      text: '#d4d4d4'
+      cursor: '#d4d4d4'
+
+    normal:
+      black:   '#1e1e1e'
+      red:     '#f44747'
+      green:   '#608b4e'
+      yellow:  '#dcdcaa'
+      blue:    '#569cd6'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#d4d4d4'
+
+    bright:
+      black:   '#545454'
+      red:     '#f44747'
+      green:   '#608b4e'
+      yellow:  '#dcdcaa'
+      blue:    '#569cd6'
+      magenta: '#c678dd'
+      cyan:    '#56b6c2'
+      white:   '#d4d4d4'
+
+colors: *dark
+
 # Bell
 #
 # The bell is rung every time the BEL control character is received.
