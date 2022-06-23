@@ -377,7 +377,7 @@ schemes:
       cyan:    '#56b6c2'
       white:   '#d4d4d4'
 
-colors: *gruvbox
+colors: *dark
 
 # Bell
 #
@@ -481,6 +481,7 @@ blinking: On
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
+  # program: "C:/Program Files/nu/bin/nu.exe"
   program: "C:/Program Files/Powershell/7/pwsh.exe"
   # args:
   #   - --cd ~
