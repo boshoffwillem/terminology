@@ -482,9 +482,10 @@ blinking: On
 #   - (Windows) powershell
 shell:
   # program: "C:/Program Files/nu/bin/nu.exe"
-  program: "C:/Program Files/Powershell/7/pwsh.exe"
+  # program: "C:/Program Files/Powershell/7/pwsh.exe"
+  program: "wsl.exe -d openSUSE-Leap-15.4"
   # args:
-  #   - --cd ~
+  #   - cd ~
 
 # Startup directory
 #
