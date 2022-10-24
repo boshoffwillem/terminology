@@ -4,8 +4,8 @@
     "actions": 
     [
         {
-            "command": "paste",
-            "keys": "ctrl+shift+v"
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -16,8 +16,8 @@
             "keys": "ctrl+shift+c"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": "paste",
+            "keys": "ctrl+shift+v"
         },
         {
             "command": 
@@ -36,7 +36,7 @@
     {
         "defaults": 
         {
-            "colorScheme": "Dark+",
+            "colorScheme": "gruvbox",
             "font": 
             {
                 "face": "FantasqueSansMono Nerd Font",
@@ -53,23 +53,10 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "commandline": "nu.exe",
-                "guid": "{2b372ca1-1ee2-403d-a839-6d63077ad871}",
-                "hidden": false,
-                "icon": "https://www.nushell.sh/icon.png",
-                "name": "Nu Shell"
-            },
-            {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{bc2da056-dd06-5879-b969-1dfcefc8d2c7}",
-                "hidden": false,
-                "name": "openSUSE-Tumbleweed",
-                "source": "Windows.Terminal.Wsl"
             },
             {
                 "guid": "{6c9bfa20-8f3f-5d44-8275-9aaf3c5b149b}",
@@ -78,9 +65,41 @@
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{14d26a2f-55be-5338-961a-0b90b6116eb1}",
+                "commandline": "nu.exe",
+                "guid": "{2b372ca1-1ee2-403d-a839-6d63077ad871}",
                 "hidden": false,
-                "name": "Developer Command Prompt for VS 2022 ",
+                "icon": "https://www.nushell.sh/icon.png",
+                "name": "Nu Shell"
+            },
+            {
+                "commandline": "wsl.exe -d openSUSE-Tumbleweed",
+                "guid": "{2b372ca1-1ee2-403d-a839-6d63077adddd}",
+                "hidden": false,
+                "icon": "C:\\Users\\willem.boshoff\\OneDrive - Dynamo Analytics\\Pictures\\suse.jpg",
+                "name": "openSUSE"
+            },
+            {
+                "guid": "{76086232-5bdf-530b-b5cd-b2a233b45fa6}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{2a98c84e-8e62-5979-9dac-3ff1c95d6443}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{6df8f6bb-4a7e-57d6-8156-4e589672ef76}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022 (2)",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{4df1bf9d-aa93-5715-873c-42028dffdabd}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022 (2)",
                 "source": "Windows.Terminal.VisualStudio"
             }
         ]
@@ -318,27 +337,27 @@
             "yellow": "#C4A000"
         },
         {
-            "background": "#16161E",
-            "black": "#363B54",
-            "blue": "#7AA2F7",
-            "brightBlack": "#363B54",
-            "brightBlue": "#7AA2F7",
-            "brightCyan": "#7DCFFF",
-            "brightGreen": "#41A6B5",
-            "brightPurple": "#BB9AF7",
-            "brightRed": "#F7768E",
-            "brightWhite": "#ACB0D0",
-            "brightYellow": "#E0AF68",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#7DCFFF",
-            "foreground": "#787C99",
-            "green": "#41A6B5",
-            "name": "TokyoNight",
-            "purple": "#BB9AF7",
-            "red": "#F7768E",
-            "selectionBackground": "#FFFFFF",
-            "white": "#787C99",
-            "yellow": "#E0AF68"
+            "background": "#1D1F21",
+            "black": "#000000",
+            "blue": "#81A2BE",
+            "brightBlack": "#767676",
+            "brightBlue": "#81A2BE",
+            "brightCyan": "#8ABEB7",
+            "brightGreen": "#B5BD68",
+            "brightPurple": "#B294BB",
+            "brightRed": "#CC6666",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#F0C674",
+            "cursorColor": "#C5C8C6",
+            "cyan": "#8ABEB7",
+            "foreground": "#C5C8C6",
+            "green": "#B5BD68",
+            "name": "Tomorrow Night",
+            "purple": "#B294BB",
+            "red": "#CC6666",
+            "selectionBackground": "#373B41",
+            "white": "#FFFFFF",
+            "yellow": "#F0C674"
         },
         {
             "background": "#000000",
@@ -362,6 +381,52 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        },
+        {
+            "background": "#2B2B2B",
+            "black": "#1F1F1F",
+            "blue": "#5394EC",
+            "brightBlack": "#AE8ABE",
+            "brightBlue": "#7EAEF1",
+            "brightCyan": "#6CDADA",
+            "brightGreen": "#A8C023",
+            "brightPurple": "#FF99FF",
+            "brightRed": "#FF8785",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF00",
+            "cursorColor": "#BBBBBB",
+            "cyan": "#299999",
+            "foreground": "#A9B7C6",
+            "green": "#A8C023",
+            "name": "darcula",
+            "purple": "#AE8ABE",
+            "red": "#FF6B6B",
+            "selectionBackground": "#214283",
+            "white": "#FFFFFF",
+            "yellow": "#D6BF55"
+        },
+        {
+            "background": "#1C1C1C",
+            "black": "#8A8A8A",
+            "blue": "#87AFAF",
+            "brightBlack": "#767676",
+            "brightBlue": "#87AFAF",
+            "brightCyan": "#00D7FF",
+            "brightGreen": "#AFAF00",
+            "brightPurple": "#D787AF",
+            "brightRed": "#D75F5F",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFAF00",
+            "cursorColor": "#FFFFAF",
+            "cyan": "#00D7FF",
+            "foreground": "#BCBCBC",
+            "green": "#AFAF00",
+            "name": "darktooth",
+            "purple": "#D787AF",
+            "red": "#D75F5F",
+            "selectionBackground": "#00005F",
+            "white": "#FFFFFF",
+            "yellow": "#FFAF00"
         },
         {
             "background": "#1E1E1E",
@@ -388,5 +453,3 @@
         }
     ]
 }
-
-    

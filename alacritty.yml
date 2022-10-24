@@ -377,7 +377,105 @@ schemes:
       cyan:    '#56b6c2'
       white:   '#d4d4d4'
 
-colors: *dark
+  darcula: &darcula
+
+    primary:
+      background: '#2B2B2B'
+      foreground: '#A9B7C6'
+
+    cursor:
+      text: '#A9B7C6'
+      cursor: '#BBBBBB'
+
+    selection:
+      text: '#A9B7C6'
+      background: '#214283'
+
+    line_indicator:
+      foreground: None
+      background: '#323232'
+
+    vi_mode_cursor:
+      text: '#A9B7C6'
+      cursor: '#BBBBBB'
+
+    search:
+      matches:
+        background: '#32593D'
+        foreground: '#A9B7C6'
+      focused_match:
+        background: '#32593D'
+        foreground: '#A9B7C6'
+      bar:
+        background: '#282828'
+        foreground: '#ebdbb2'
+
+    normal:
+      white:   '#FFFFFF'
+      red:     '#FF6B68'
+      green:   '#A8C023'
+      yellow:  '#D6BF55'
+      blue:    '#5394EC'
+      magenta: '#AE8ABE'
+      cyan:    '#299999'
+      black:   '#1F1F1F'
+      gray:    '#999999'
+
+    bright:
+      white:   '#FFFFFF'
+      red:     '#FF8785'
+      green:   '#A8C023'
+      yellow:  '#FFFF00'
+      blue:    '#7EAEF1'
+      magenta: '#FF99FF'
+      cyan:    '#6CDADA'
+      black:   '#AE8ABE'
+      gray:    '#999999'
+
+  tomorrowNight: &tomorrowNight
+
+    primary:
+      background: '#1d1f21'
+      foreground: '#c5c8c6'
+
+    cursor:
+      text: '#1d1f21'
+      cursor: '#c5c8c6'
+
+    selection:
+      text: '#c5c8c6'
+      background: '#373b41'
+
+    line_indicator:
+      foreground: None
+      background: '#c5c8c6'
+
+    vi_mode_cursor:
+      text: '#1d1f21'
+      cursor: '#c5c8c6'
+
+    search:
+      matches:
+        background: '#32593D'
+        foreground: '#A9B7C6'
+      focused_match:
+        background: '#32593D'
+        foreground: '#A9B7C6'
+      bar:
+        background: '#282828'
+        foreground: '#ebdbb2'
+
+    normal:
+      white:   '#FFFFFF'
+      red:     '#cc6666'
+      green:   '#b5bd68'
+      yellow:  '#f0c674'
+      blue:    '#81a2be'
+      magenta: '#b294bb'
+      cyan:    '#8abeb7'
+      black:   '#000000'
+
+colors: *darcula
 
 # Bell
 #
@@ -437,7 +535,7 @@ colors: *dark
 #   - ▇ Block
 #   - _ Underline
 #   - | Beam
-#shape: Block
+shape: Beam
 
 # Cursor blinking state
 #
@@ -482,8 +580,8 @@ blinking: On
 #   - (Windows) powershell
 shell:
   # program: "C:/Program Files/nu/bin/nu.exe"
-  # program: "C:/Program Files/Powershell/7/pwsh.exe"
-  program: "wsl.exe -d openSUSE-Leap-15.4"
+  program: "C:/Program Files/Powershell/7/pwsh.exe"
+  # program: "wsl.exe -d openSUSE-Leap-15.4"
   # args:
   #   - cd ~
 
