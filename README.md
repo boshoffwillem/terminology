@@ -11,9 +11,17 @@ Simply go to the Startship website and follow the installation instructions.
 This will include Configuring the appropriate shell (typically bash on Linux
 and PowerShell on Windows) to use Starship.
 
+## PowerShell
+
+PowerShell reqquires some  modules to be installed
+
+```bash
+Install-Module -Name Terminal-Icons -Repository PSGallery
+```
+
 ## Download a cool font
 
-Personally I recommend FantasqueSansMono Nerd Font from nerdfonts.com
+Personally I recommend JetBrainsMono Nerd Font from nerdfonts.com
 
 ## Windows
 

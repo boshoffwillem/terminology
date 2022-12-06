@@ -116,43 +116,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: FantasqueSansMono Nerd Font
+    family: JetBrainsMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
-
-  # Bold font face
-  bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: FantasqueSansMono Nerd Font
-
-    # The `style` can be specified to pick a specific face.
-    style: Bold
-
-  # Italic font face
-  italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: FantasqueSansMono Nerd Font
-
-    # The `style` can be specified to pick a specific face.
-    style: Italic
-
-  # Bold italic font face
-  bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: FantasqueSansMono Nerd Font
-
-    # The `style` can be specified to pick a specific face.
-    style: Bold Italic
 
   # Point size
   size: 11.0
@@ -181,7 +148,7 @@ font:
 draw_bold_text_with_bright_colors: true
 
 schemes:
-  gruvbox: &gruvbox
+  gruvbox: &dark
     primary:
       background: "#282828"
       foreground: "#ebdbb2"
@@ -406,7 +373,7 @@ schemes:
       focused_match:
         background: '#32593D'
         foreground: '#A9B7C6'
-      bar:
+      footer_bar:
         background: '#282828'
         foreground: '#ebdbb2'
 
@@ -461,7 +428,7 @@ schemes:
       focused_match:
         background: '#32593D'
         foreground: '#A9B7C6'
-      bar:
+      footer_bar:
         background: '#282828'
         foreground: '#ebdbb2'
 
