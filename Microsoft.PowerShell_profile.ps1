@@ -18,5 +18,3 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 
 Set-Alias -Name grep -Value rg
-Set-Alias -Name v -Value nvim
-Set-Alias -Name e -Value emacs -nw
