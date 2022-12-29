@@ -6,10 +6,7 @@ if (Test-Path($ChocolateyProfile)) {
 
 # Starship
 Invoke-Expression (&starship init powershell)
-$ENV:STARSHIP_CONFIG = "C:\Users\willem.boshoff\code\terminology\starship.toml"
-
-# Oh my Posh
-# oh-my-posh --init --shell pwsh --config ~/code/terminology/oh-my-posh-settings.json | Invoke-Expression
+$ENV:STARSHIP_CONFIG = "C:\Users\willem.boshoff\code\.dotfiles\starship\.config\starship.toml"
 
 # Better icons
 Import-Module -Name Terminal-Icons
