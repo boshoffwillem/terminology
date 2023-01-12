@@ -36,7 +36,7 @@
     {
         "defaults": 
         {
-            "colorScheme": "Light+",
+            "colorScheme": "Dark+",
             "font": 
             {
                 "face": "JetBrainsMono Nerd Font",
@@ -193,7 +193,7 @@
             "green": "#009000",
             "yellow": "#795e25",
             "blue": "#007acc",
-            "magenta": "#af00db",
+            "purple": "#af00db",
             "cyan": "#56b6c2",
             "white": "#d4d4d4",
             "brightBlack": "#1e1e1e",
@@ -201,7 +201,7 @@
             "brightGreen": "#009000",
             "brightYellow": "#795e25",
             "brightBlue": "#007acc",
-            "brightMagenta": "#af00db",
+            "brightPurple": "#af00db",
             "brightCyan": "#56b6c2",
             "brightWhite": "#d4d4d4",
             "name": "Light+"
