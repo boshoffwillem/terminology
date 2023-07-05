@@ -8,7 +8,7 @@
 #
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
-#import:
+# import:
 #  - /path/to/alacritty.yml
 
 # Any items in the `env` entry below will be added as
@@ -116,7 +116,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetBrainsMono Nerd Font
+    family: FiraCode Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -256,64 +256,6 @@ schemes:
       aqua: "#8ec07c"
       white: "#ebdbb2"
 
-    # Dim colors
-    #
-    # If the dim colors are not set, they will be calculated automatically based
-    # on the `normal` colors.
-    #dim:
-    #  black:   '#131415'
-    #  red:     '#864343'
-    #  green:   '#777c44'
-    #  yellow:  '#9e824c'
-    #  blue:    '#556a7d'
-    #  magenta: '#75617b'
-    #  cyan:    '#5b7d78'
-    #  white:   '#828482'
-    # Indexed Colors
-    #
-    # The indexed colors include all colors from 16 to 256.
-    # When these are not set, they're filled with sensible defaults.
-    #
-    # Example:
-    #   `- { index: 16, color: '#ff00ff' }`
-    #
-    #indexed_colors: []
-    # Transparent cell backgrounds
-    #
-    # Whether or not `window.opacity` applies to all cell backgrounds or only to
-    # the default background. When set to `true` all cells will be transparent
-    # regardless of their background color.
-    #transparent_background_colors: false
-
-  codelight: &light
-    primary:
-      background: '#ffffff'
-      foreground: '#1e1e1e'
-
-    cursor:
-      text: '#d4d4d4'
-      cursor: '#d4d4d4'
-
-    normal:
-      black:   '#1e1e1e'
-      red:     '#c72e0f'
-      green:   '#009000'
-      yellow:  '#795e25'
-      blue:    '#007acc'
-      magenta: '#af00db'
-      cyan:    '#56b6c2'
-      white:   '#d4d4d4'
-
-    bright:
-      black:   '#1e1e1e'
-      red:     '#c72e0f'
-      green:   '#009000'
-      yellow:  '#795e25'
-      blue:    '#007acc'
-      magenta: '#af00db'
-      cyan:    '#56b6c2'
-      white:   '#d4d4d4'
-
   codedark: &dark
 
     primary:
@@ -344,105 +286,79 @@ schemes:
       cyan:    '#56b6c2'
       white:   '#d4d4d4'
 
-  darcula: &darcula
+  rosePine: &rosePine
 
     primary:
-      background: '#2B2B2B'
-      foreground: '#A9B7C6'
+      background: '#191724'
+      foreground: '#e0def4'
 
     cursor:
-      text: '#A9B7C6'
-      cursor: '#BBBBBB'
-
-    selection:
-      text: '#A9B7C6'
-      background: '#214283'
-
-    line_indicator:
-      foreground: None
-      background: '#323232'
+      text: '#e0def4'
+      cursor: '#524f67'
 
     vi_mode_cursor:
-      text: '#A9B7C6'
-      cursor: '#BBBBBB'
+      text: '#e0def4'
+      cursor: '#524f67'
 
     search:
       matches:
-        background: '#32593D'
-        foreground: '#A9B7C6'
+        foreground: '#908caa'
+        background: '#26233a'
       focused_match:
-        background: '#32593D'
-        foreground: '#A9B7C6'
-      footer_bar:
-        background: '#282828'
-        foreground: '#ebdbb2'
+        foreground: '#191724'
+        background: '#1f1d2e'
+
+    hints:
+      start:
+        foreground: '#908caa'
+        background: '#1f1d2e'
+      end:
+        foreground: '#6e6a86'
+        background: '#1f1d2e'
+
+    line_indicator:
+      foreground: None
+      background: None
+
+    footer_bar:
+      foreground: '#e0def4'
+      background: '#1f1d2e'
+
+    selection:
+      text: '#e0def4'
+      background: '#403d52'
 
     normal:
-      white:   '#FFFFFF'
-      red:     '#FF6B68'
-      green:   '#A8C023'
-      yellow:  '#D6BF55'
-      blue:    '#5394EC'
-      magenta: '#AE8ABE'
-      cyan:    '#299999'
-      black:   '#1F1F1F'
-      gray:    '#999999'
+      black:   '#26233a'
+      red:     '#eb6f92'
+      green:   '#31748f'
+      yellow:  '#f6c177'
+      blue:    '#9ccfd8'
+      magenta: '#c4a7e7'
+      cyan:    '#ebbcba'
+      white:   '#e0def4'
 
     bright:
-      white:   '#FFFFFF'
-      red:     '#FF8785'
-      green:   '#A8C023'
-      yellow:  '#FFFF00'
-      blue:    '#7EAEF1'
-      magenta: '#FF99FF'
-      cyan:    '#6CDADA'
-      black:   '#AE8ABE'
-      gray:    '#999999'
+      black:   '#6e6a86'
+      red:     '#eb6f92'
+      green:   '#31748f'
+      yellow:  '#f6c177'
+      blue:    '#9ccfd8'
+      magenta: '#c4a7e7'
+      cyan:    '#ebbcba'
+      white:   '#e0def4'
 
-  tomorrowNight: &tomorrowNight
+    dim:
+      black:   '#6e6a86'
+      red:     '#eb6f92'
+      green:   '#31748f'
+      yellow:  '#f6c177'
+      blue:    '#9ccfd8'
+      magenta: '#c4a7e7'
+      cyan:    '#ebbcba'
+      white:   '#e0def4'
 
-    primary:
-      background: '#1d1f21'
-      foreground: '#c5c8c6'
-
-    cursor:
-      text: '#1d1f21'
-      cursor: '#c5c8c6'
-
-    selection:
-      text: '#c5c8c6'
-      background: '#373b41'
-
-    line_indicator:
-      foreground: None
-      background: '#c5c8c6'
-
-    vi_mode_cursor:
-      text: '#1d1f21'
-      cursor: '#c5c8c6'
-
-    search:
-      matches:
-        background: '#32593D'
-        foreground: '#A9B7C6'
-      focused_match:
-        background: '#32593D'
-        foreground: '#A9B7C6'
-      footer_bar:
-        background: '#282828'
-        foreground: '#ebdbb2'
-
-    normal:
-      white:   '#FFFFFF'
-      red:     '#cc6666'
-      green:   '#b5bd68'
-      yellow:  '#f0c674'
-      blue:    '#81a2be'
-      magenta: '#b294bb'
-      cyan:    '#8abeb7'
-      black:   '#000000'
-
-colors: *darcula
+colors: *rosePine
 
 # Bell
 #
@@ -546,8 +462,8 @@ blinking: On
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  # program: "C:/Program Files/nu/bin/nu.exe"
-  program: "C:/Program Files/Powershell/7/pwsh.exe"
+  program: "C:/Program Files/nu/bin/nu.exe"
+  # program: "C:/Program Files/Powershell/7/pwsh.exe"
   # program: "wsl.exe -d openSUSE-Leap-15.4"
   # args:
   #   - cd ~
